@@ -175,7 +175,7 @@
       "background:rgba(0,0,0,0.85);color:#fff;font:13px/1.4 sans-serif;" +
       "box-shadow:0 10px 25px rgba(0,0,0,0.35);";
 
-    // lang="tr-TR" eklenerek tarayıcının 24 saat formatını kullanması sağlandı
+
     panel.innerHTML = `
       <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
         <div style="font-weight:700;">TCDD Koltuk Yakalama </div>
@@ -303,7 +303,7 @@
           // 1. İşlem: Butonu yeşille
           b.classList.add("tcdd-hit-economy");
 
-          // 2. İşlem: ŞİMDİ tüm kartı yeşille (çünkü hem saat uydu hem bilet var)
+          // 2. İşlem: tüm kartı yeşille (çünkü hem saat uydu hem bilet var)
           if (tripCard && !processedCards.has(tripCard)) {
             tripCard.classList.add("tcdd-hit-time");
             processedCards.add(tripCard);
