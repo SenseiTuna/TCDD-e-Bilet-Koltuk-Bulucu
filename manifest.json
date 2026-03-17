@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "TCDD Takip",
+  "version": "1.0",
+  "description": "TCDD e-bilet sayfası için otomatik koltuk takipçisi.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://ebilet.tcddtasimacilik.gov.tr/*"],
+      "js": ["script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
